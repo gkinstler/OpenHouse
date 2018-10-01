@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Sept20Sandbox
 {
-    class Rooms
+    class RoomsClass
     {
         public string Name { get; set; }
         public string GoodLighting { get; set; }
