@@ -89,13 +89,6 @@ namespace Sept20Sandbox
             }
 
             Console.ReadLine();
-
-
-
-               
-
-
-
         }
     }
 }
