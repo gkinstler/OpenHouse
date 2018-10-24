@@ -18,7 +18,7 @@ namespace Sept20Sandbox
 
             Console.WriteLine("What would you like to see first?  The kitchen?  The master bedroom?  The living room?");
 
-            string answer1 = Console.ReadLine();
+            string answer1 = Console.ReadLine().ToLower();
 
             if (answer1 == "kitchen" || answer1 == "k")
             {
@@ -39,7 +39,7 @@ namespace Sept20Sandbox
             }
 
             Console.WriteLine($"What would you like to see next? {rooms[0]} or {rooms[1]}?");
-            string answer2 = Console.ReadLine();
+            string answer2 = Console.ReadLine().ToLower();
 
             if (answer2 == rooms[0])
             {
@@ -53,9 +53,9 @@ namespace Sept20Sandbox
             }
 
             Console.WriteLine($"OK, we only have the {rooms[0]} left.  Want to see that now?");
-            string answer3 = Console.ReadLine();
+            string answer3 = Console.ReadLine().ToLower();
 
-            if (answer3 == "Yes" || answer3 == "y")
+            if (answer3 == "yes" || answer3 == "y")
             {
                 Console.WriteLine($"Awesome, let's check out {rooms[0]}.");
             }
@@ -64,9 +64,9 @@ namespace Sept20Sandbox
                 //They may want to make an early offer without seeing the last room//
 
                 Console.WriteLine("Do you want to make an offer now on the house?");
-                string earlyOffer = Console.ReadLine();
+                string earlyOffer = Console.ReadLine().ToLower();
 
-                if (earlyOffer == "Yes" || earlyOffer == "Y")
+                if (earlyOffer == "yes" || earlyOffer == "y")
                 {
                     Console.WriteLine("Sweet!  Let's do this!");
                 }
@@ -77,9 +77,9 @@ namespace Sept20Sandbox
             }
 
             Console.WriteLine("OK, you've now seen everything in the house.  Do you want to make an offer?");
-            string offer = Console.ReadLine();
+            string offer = Console.ReadLine().ToLower();
 
-            if (offer == "Yes" || offer == "Y")
+            if (offer == "yes" || offer == "y")
             {
                 Console.WriteLine("Sweet!  Let's do this!");
             }
